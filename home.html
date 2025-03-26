@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script src="home.js"></script>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h3>Checkliste für Baugesuch</h3>
+    <table id="checklistTable">
+        <tr>
+            <th>Kategorie</th>
+            <th>Punkt</th>
+            <th>Status</th>
+            <th>Bemerkungen</th>
+            <th>Relevanz</th>
+        </tr>
+    </table>
+    <br>
+    <button onclick="addRow()">Punkt hinzufügen</button>
+    <button onclick="generateReport()">Report generieren</button>
+</body>
+</html>
